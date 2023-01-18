@@ -12,8 +12,8 @@ const IndexPage = () => {
       <p>Welcome to my Gatsby site!</p>
       <p>This is going to be a site for Noel Hill, but for now, I'm starting with a template.</p>
       <StaticImage
-        alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
-        src = "../images/clifford.jpg"
+        alt="Noel Hill, holding a concertina, looking off to the side in front of a chalkboard with music notes."
+        src = "../images/Noel-Hill010_md.jpg"
         
       />
     </Layout>
