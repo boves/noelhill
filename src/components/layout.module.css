@@ -5,12 +5,12 @@
 }
 .site-title{
     font-size: 3rem;
-    color: gray;
+    color: rgb(173, 145, 85);
     font-weight: 700;
     margin: 3rem 0;
 }
 .heading {
-    color: rebeccapurple;
+    color: rgb(163, 112, 213);
 
 }
 .nav-links {
@@ -24,5 +24,9 @@
 
 }
 .nav-link-text {
-    color: black;
+    color: rgb(194, 194, 194);
+}
+body {
+    background-color: rgb(27, 27, 30);
+    color: rgb(187, 187, 187);
 }
