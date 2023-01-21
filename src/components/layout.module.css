@@ -30,3 +30,6 @@ body {
     background-color: rgb(27, 27, 30);
     color: rgb(187, 187, 187);
 }
+.hero {
+    border:2px solid rgb(194, 194, 194);
+}
