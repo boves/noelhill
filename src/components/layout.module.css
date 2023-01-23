@@ -33,3 +33,24 @@ body {
 .hero {
     border:2px solid rgb(194, 194, 194);
 }
+input {
+    margin-left: 10px;
+}
+.name {
+    margin-left: 20px;
+}
+.email {
+    margin-left: 22px;
+}
+.subject {
+    margin-left: 10px;
+}
+.message {
+    margin-top: 5px;
+
+}
+
+.form-group{
+    padding: 10px;
+    
+}
