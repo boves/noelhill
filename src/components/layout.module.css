@@ -51,6 +51,9 @@ input {
 }
 
 .form-group{
-    padding: 10px;
-    
+    padding: 10px;    
+}
+
+input, textarea {
+    width: 500px;
 }
