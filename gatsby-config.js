@@ -6,8 +6,9 @@ module.exports = {
     title: `Noel Hill`,
     siteUrl: `https://www.noelhill.com`,
   },
-  pathPrefix: "/noelhill", 
   plugins: [
+    "gatsby-plugin-sass",
+    "gatsby-plugin-netlify",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
