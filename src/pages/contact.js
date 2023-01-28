@@ -13,7 +13,10 @@ import {
 const contactPage = () => {
     return (
         <Layout>
-            <form method="post" data-netlify="true" name="contact"> 
+            <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact"> 
+                <input type="hidden" name="bot-field" />
+                <input type="hidden" name="form-name" value="contact" />
+
                 <div className={formGroup}>
                     <label>
                         Name
