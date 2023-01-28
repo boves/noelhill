@@ -49,11 +49,13 @@ input {
     margin-top: 5px;
 
 }
-
 .form-group{
     padding: 10px;    
 }
-
-input, textarea {
-    width: 500px;
+textarea {
+    width: 80%;
 }
+.name, .email, .subject {
+    width: 67%;
+}
+

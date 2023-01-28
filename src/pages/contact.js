@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Layout from '../components/layout'
 import { Script } from 'gatsby'
+import { navigate } from 'gatsby-link'
 import {
     name,
     email,
@@ -10,39 +11,78 @@ import {
     
 } from '../components/layout.module.css'
 
-const contactPage = () => {
+function encode(data) {
+    return Object.keys(data)
+      .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .join('&')
+  }
+
+// const contactPage = () => {
+export default function Contact(){
+    const [state, setState] = React.useState({})
+
+    const handleChange = (e) => {
+      setState({ ...state, [e.target.name]: e.target.value })
+    }
+  
+    const handleSubmit = (e) => {
+      e.preventDefault()
+      const form = e.target
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({
+          'form-name': form.getAttribute('name'),
+          ...state,
+        }),
+      })
+        .then(() => navigate(form.getAttribute('action')))
+        .catch((error) => alert(error))
+    }
     return (
         <Layout>
-            <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact"> 
-                <input type="hidden" name="bot-field" />
+            <form 
+                name="contact"
+                method="post" 
+                action="/thanks/"
+                data-netlify="true" 
+                netlify-honeypot="bot-field" 
+                onSubmit={handleSubmit}
+            > 
+                 {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
                 <input type="hidden" name="form-name" value="contact" />
+                <p hidden>
+                    <label>
+                        Don't fill this out: <input name="bot-field" onChange={handleChange} />
+                    </label>
+                </p>
 
                 <div className={formGroup}>
                     <label>
                         Name
                     </label>
-                        <input type="text" name="name" id="name" className={name} />
+                        <input type="text" name="name" id="name" className={name} onChange={handleChange} />
                 </div>
                 <div className={formGroup}>
                     <label>
                         Email
                     </label>
-                    <input type="email" name="email" id="email" className={email} />
+                    <input type="email" name="email" id="email" className={email} onChange={handleChange}/>
                 </div>
                 <div className={formGroup}>
                     <label>
                         Subject
                     </label>
-                    <input type="text" name="subject" id="subject" className={subject}  />
+                    <input type="text" name="subject" id="subject" className={subject}  onChange={handleChange}/>
                 </div>
                 <div className={formGroup}>
                     <label>
                         Message
                     </label>
                     <br />
-                    <textarea name="message" id="message" rows="5" className={message} />
+                    <textarea name="message" id="message" rows="5" className={message} onChange={handleChange}/>
                 </div>
-                <input type="reset" value="Clear" />
+                <input type="reset" value="Clear" className='clear'/>
                 <button type="submit">Send</button>
                 <br />
                 <br />
@@ -61,4 +101,4 @@ export function Head(){
     )
 }
 
-export default contactPage
+// export default contactPage

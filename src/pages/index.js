@@ -10,8 +10,8 @@ const IndexPage = () => {
   return (
     <Layout pageTitle="Home Page">
 
-      <p>Welcome to my Gatsby site!</p>
-      <p>This is going to be a site for Noel Hill, but for now, I'm starting with a template.</p>
+      <p>Mollit fugiat veniam anim culpa amet.</p>
+      <p>Proident ea minim cillum excepteur cupidatat et. Aute irure do esse adipisicing.</p>
       <StaticImage
         alt="Noel Hill, holding a concertina, looking off to the side in front of a chalkboard with music notes."
         src = "../images/Noel-Hill010_md.jpg"
