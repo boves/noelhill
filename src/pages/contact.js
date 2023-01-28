@@ -13,27 +13,24 @@ import {
 const contactPage = () => {
     return (
         <Layout>
-            <form method="post" action="https://getform.io/f/df5e366d-e6fd-4f72-8776-f690e49db306">
+            <form method="post" data-netlify="true" name="contact"> 
                 <div className={formGroup}>
                     <label>
                         Name
                     </label>
                         <input type="text" name="name" id="name" className={name} />
-                    
                 </div>
                 <div className={formGroup}>
                     <label>
                         Email
                     </label>
                     <input type="email" name="email" id="email" className={email} />
-                    
                 </div>
                 <div className={formGroup}>
                     <label>
                         Subject
                     </label>
                     <input type="text" name="subject" id="subject" className={subject}  />
-                    
                 </div>
                 <div className={formGroup}>
                     <label>
@@ -48,16 +45,7 @@ const contactPage = () => {
                 <br />
                 <br />
                 <div class="g-recaptcha" data-sitekey="6LcHqxskAAAAAGjdcMxcq58Xa1Yqbg1JdmGmuFxr" />
-                
             </form>
-
-
-
-
-
-
-
-
         </Layout>
     )
 }
