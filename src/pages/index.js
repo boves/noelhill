@@ -9,9 +9,10 @@ import { hero } from '../components/layout.module.css'
 const IndexPage = () => {
   return (
     <Layout pageTitle="Home Page">
-
-      <p>Mollit fugiat veniam anim culpa amet.</p>
-      <p>Proident ea minim cillum excepteur cupidatat et. Aute irure do esse adipisicing.</p>
+      <h2>West Coast, 2023</h2>
+      <p>August 6–11 August. Tilikum Retreat Center, Newburg, OR.</p>
+      <h2>East Coast, 2023</h2>
+      <p>July 23-28 July. McGrath’s, East Durham, NY. </p>
       <StaticImage
         alt="Noel Hill, holding a concertina, looking off to the side in front of a chalkboard with music notes."
         src = "../images/Noel-Hill010_md.jpg"

@@ -11,7 +11,6 @@
 }
 .heading {
     color: rgb(163, 112, 213);
-
 }
 .nav-links {
     display: flex;
@@ -30,6 +29,8 @@ body {
     background-color: rgb(27, 27, 30);
     color: rgb(187, 187, 187);
 }
+
+/* Form */
 .hero {
     border:2px solid rgb(194, 194, 194);
 }
