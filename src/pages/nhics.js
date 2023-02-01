@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 import Seo from '../components/seo'
 
 // Step 2: Define your component
-const NHICS= () => {
+const NHICS = () => {
     return (
         <Layout pageTitle="Irish Concertina School">
             <h2>West Coast, 2023</h2>
