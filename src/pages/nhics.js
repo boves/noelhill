@@ -6,14 +6,11 @@ import Seo from '../components/seo'
 // Step 2: Define your component
 const NHICS= () => {
     return (
-        <Layout pageTitle="Noel Hill Irish Conertina School">
-            <p>
-                Hi there! I'm Daiv. I made this site to learn how to 
-                make new sites from scratch using Gatsby.
-            </p>
-            <p>
-                This is going to be a different page in the final website.
-            </p>
+        <Layout pageTitle="Irish Concertina School">
+            <h2>West Coast, 2023</h2>
+            <p>August 6–11 August. Tilikum Retreat Center, Newburg, OR.</p>
+            <h2>East Coast, 2023</h2>
+            <p>July 23-28 July. McGrath’s, East Durham, NY. </p>
         </Layout>
     )
 }
