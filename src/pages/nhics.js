@@ -2,6 +2,22 @@
 import * as React from 'react'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
+import { Script } from 'gatsby'
+import { navigate } from 'gatsby-link'
+import {
+    name,
+    email,
+    subject,
+    message,
+    formGroup
+    
+} from '../components/layout.module.css'
+
+function encode(data) {
+    return Object.keys(data)
+      .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .join('&')
+}
 
 // Step 2: Define your component
 const NHICS = () => {
