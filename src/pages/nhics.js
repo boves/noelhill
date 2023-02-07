@@ -48,6 +48,11 @@ const NHICS = () => {
             <p>August 6–11 August. Tilikum Retreat Center, Newburg, OR.</p>
             <h2>East Coast, 2023</h2>
             <p>July 23-28 July. McGrath’s, East Durham, NY. </p>
+            <h2>To request information</h2>
+            <p>
+                To learn more about the classes, or to register, 
+                please enter your info and we will get back to you as soon as possible.
+            </p>
 
             <form 
                 name="contact"
@@ -78,25 +83,12 @@ const NHICS = () => {
                     <input type="email" name="email" id="email" className={email} onChange={handleChange}/>
                 </div>
                 <div className={formGroup}>
-                    <label>
-                        Subject
-                    </label>
-                    <input type="text" name="subject" id="subject" className={subject}  onChange={handleChange}/>
-                </div>
-                <div className={formGroup}>
-                    <p>Contact reason</p>
+                    <label>Choose location: </label>
                     <select name="reason">
                         <option value="">Please choose one</option>
-                        <option value="midwest">Midwest</option>
+                        <option value="midwest">East Coast</option>
                         <option value="west-coast">West Coast</option>
                     </select>
-                </div>
-                <div className={formGroup}>
-                    <label>
-                        Message
-                    </label>
-                    <br />
-                    <textarea name="message" id="message" rows="5" className={message} onChange={handleChange}/>
                 </div>
                 <input type="reset" value="Clear" className='clear'/>
                 <button type="submit">Send</button>
