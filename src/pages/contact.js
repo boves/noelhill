@@ -75,14 +75,14 @@ export default function Contact(){
                     </label>
                     <input type="text" name="subject" id="subject" className={subject}  onChange={handleChange}/>
                 </div>
-                <div className={formGroup}>
+                {/* <div className={formGroup}>
                     <p>Contact reason</p>
                     <select name="reason">
                         <option value="">Please choose one</option>
                         <option value="midwest">Midwest</option>
                         <option value="west-coast">West Coast</option>
                     </select>
-                </div>
+                </div> */}
                 <div className={formGroup}>
                     <label>
                         Message
