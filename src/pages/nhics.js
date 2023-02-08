@@ -84,7 +84,7 @@ const NHICS = () => {
                 </div>
                 <div className={formGroup}>
                     <label>Choose location: </label>
-                    <select name="reason">
+                    <select name="location" id="location">
                         <option value="">Please choose one</option>
                         <option value="midwest">East Coast</option>
                         <option value="west-coast">West Coast</option>
