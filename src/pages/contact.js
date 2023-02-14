@@ -2,6 +2,7 @@ import * as React from 'react'
 import Layout from '../components/layout'
 import { Script } from 'gatsby'
 import { navigate } from 'gatsby-link'
+import { Link } from 'gatsby'
 import {
     name,
     email,
@@ -41,6 +42,8 @@ export default function Contact(){
     }
     return (
         <Layout>
+            <p>For more information on Noel Hill's Irish Concertina School in the USA, please click <Link to="/nhics">here</Link> to request more info.</p>
+            <p>Otherwise, to reach Noel for any other reason, including for lessons held in Ireland, please fill out the form below.</p>
             <form 
                 name="contact"
                 method="post" 
@@ -75,14 +78,6 @@ export default function Contact(){
                     </label>
                     <input type="text" name="subject" id="subject" className={subject}  onChange={handleChange}/>
                 </div>
-                {/* <div className={formGroup}>
-                    <p>Contact reason</p>
-                    <select name="reason">
-                        <option value="">Please choose one</option>
-                        <option value="midwest">Midwest</option>
-                        <option value="west-coast">West Coast</option>
-                    </select>
-                </div> */}
                 <div className={formGroup}>
                     <label>
                         Message
