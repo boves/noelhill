@@ -11,9 +11,9 @@ const IndexPage = () => {
   return (
     <Layout>
       <h2>West Coast, 2023</h2>
-      <p>August 6–11 August. Tilikum Retreat Center, Newburg, OR. Click <Link to="/nhics">here</Link> to request more info.</p>
+      <p>August 6–11. Tilikum Retreat Center, Newburg, OR. Click <Link to="/nhics">here</Link> to request more info.</p>
       <h2>East Coast, 2023</h2>
-      <p>July 23-28 July. McGrath’s, East Durham, NY. Click <Link to="/nhics">here</Link> to request more info.</p>
+      <p>July 23-28. McGrath’s, East Durham, NY. Click <Link to="/nhics">here</Link> to request more info.</p>
       <StaticImage
         alt="Noel Hill, holding a concertina, looking off to the side in front of a chalkboard with music notes."
         src = "../images/Noel-Hill010_md.jpg"

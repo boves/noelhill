@@ -45,9 +45,9 @@ const NHICS = () => {
     return (
         <Layout pageTitle="Irish Concertina School">
             <h3>West Coast, 2023</h3>
-            <p>August 6–11 August. Tilikum Retreat Center, Newburg, OR.</p>
+            <p>August 6–11. Tilikum Retreat Center, Newburg, OR.</p>
             <h3>East Coast, 2023</h3>
-            <p>July 23-28 July. McGrath’s, East Durham, NY. </p>
+            <p>July 23-28. McGrath’s, East Durham, NY. </p>
             <h2>To request information</h2>
             <p>
                 To learn more about the classes, or to register, 
