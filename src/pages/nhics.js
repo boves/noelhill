@@ -63,7 +63,7 @@ const NHICS = () => {
                 onSubmit={handleSubmit}
             > 
                  {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-                <input type="hidden" name="form-name" value="contact" />
+                <input type="hidden" name="form-name" value="nhics" />
                 <p hidden>
                     <label>
                         Don't fill this out: <input name="bot-field" onChange={handleChange} />
