@@ -44,9 +44,9 @@ const NHICS = () => {
     }
     return (
         <Layout pageTitle="Irish Concertina School">
-            <h2>West Coast, 2023</h2>
+            <h3>West Coast, 2023</h3>
             <p>August 6–11 August. Tilikum Retreat Center, Newburg, OR.</p>
-            <h2>East Coast, 2023</h2>
+            <h3>East Coast, 2023</h3>
             <p>July 23-28 July. McGrath’s, East Durham, NY. </p>
             <h2>To request information</h2>
             <p>
@@ -83,15 +83,16 @@ const NHICS = () => {
                     <input type="email" name="email" id="email" className={email} onChange={handleChange}/>
                 </div>
                 <div className={formGroup}>
-                    <label>Choose location: </label>
-                    {/* <select name="location" id="location" classname={location} onChange={handleChange}> */}
-                    <select name="location" id="location" onChange={handleChange}>
-                        <option value="">Please choose one</option>
-                        <option value="midwest">East Coast</option>
-                        <option value="west-coast">West Coast</option>
-                    </select>
+                    
+                    <label>Select location(s):</label>
+                    <input type="checkbox" id="midwest" name="location-checkbox" value="midwest"></input>
+                    <label for="midwest">Midwest</label>
+                    
+                    <input type="checkbox" id="east-coast" name="location-checkbox" value="east-coast"></input>
+                    <label for="midwest">East Coast</label>
+                    
                 </div>
-                <input type="reset" value="Clear" className='clear'/>
+                {/* <input type="reset" value="Clear" className='clear'/> */}
                 <button type="submit">Send</button>
                 <br />
                 <br />

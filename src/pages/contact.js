@@ -90,7 +90,7 @@ export default function Contact(){
                     <br />
                     <textarea name="message" id="message" rows="5" className={message} onChange={handleChange}/>
                 </div>
-                <input type="reset" value="Clear" className='clear'/>
+                {/* <input type="reset" value="Clear" className='clear'/> */}
                 <button type="submit">Send</button>
                 <br />
                 <br />
