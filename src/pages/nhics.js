@@ -84,7 +84,8 @@ const NHICS = () => {
                 </div>
                 <div className={formGroup}>
                     <label>Choose location: </label>
-                    <select name="location" id="location" classname={location} onChange={handleChange}>
+                    {/* <select name="location" id="location" classname={location} onChange={handleChange}> */}
+                    <select name="location" id="location" onChange={handleChange}>
                         <option value="">Please choose one</option>
                         <option value="midwest">East Coast</option>
                         <option value="west-coast">West Coast</option>
