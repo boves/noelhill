@@ -55,7 +55,7 @@ const NHICS = () => {
             </p>
 
             <form 
-                name="contact"
+                name="nhics"
                 method="post" 
                 action="/thanks/"
                 data-netlify="true" 
@@ -84,7 +84,7 @@ const NHICS = () => {
                 </div>
                 <div className={formGroup}>
                     <label>Choose location: </label>
-                    <select name="location" id="location">
+                    <select name="location" id="location" classname={location} onChange={handleChange}>
                         <option value="">Please choose one</option>
                         <option value="midwest">East Coast</option>
                         <option value="west-coast">West Coast</option>
